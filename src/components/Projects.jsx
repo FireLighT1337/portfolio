@@ -42,7 +42,8 @@ export default function Projects() {
             </p>
             <h2 className="section-title">Projekte</h2>
             <p className="section-desc">
-              Eine kleine Auswahl an Projekten innerhalb meiner Ausbildung.
+              Eine kleine Auswahl an Projekten innerhalb meiner Ausbildung.{" "}
+              <br />
               Jedes Projekt hat mir etwas Neues beigebracht.
             </p>
           </Col>

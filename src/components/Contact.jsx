@@ -41,7 +41,7 @@ export default function Contact() {
                   <h3 style={{ fontWeight: 700, marginBottom: "0.5rem" }}>
                     Nachricht gesendet!
                   </h3>
-                  <p style={{ color: "var(--muted)" }}>
+                  <p>
                     Danke fürs Kontaktieren, ich melde mich sobald ich kann.
                   </p>
                 </div>

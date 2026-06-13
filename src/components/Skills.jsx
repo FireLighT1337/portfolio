@@ -11,7 +11,7 @@ const skillGroups = [
   },
   {
     category: "Tools & Platforms",
-    skills: ["Git", "GitHub", "Azure", "VS Code", "PyCharm", "Vercel"],
+    skills: ["Git", "GitHub", "Azure", "VS Code", "PyCharm", "Docker"],
   },
   {
     category: "Databases",
@@ -42,9 +42,9 @@ export default function Skills() {
                 style={{
                   fontSize: "0.8rem",
                   fontWeight: 700,
-                  color: "#64748b",
+                  color: "#112e81",
                   textTransform: "uppercase",
-                  letterSpacing: "0.08em",
+                  letterSpacing: "0.10em",
                   marginBottom: "0.75rem",
                 }}
               >
