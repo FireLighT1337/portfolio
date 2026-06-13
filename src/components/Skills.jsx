@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-// ── Edit this list to match what you actually know ──
 const skillGroups = [
   {
     category: "Languages",

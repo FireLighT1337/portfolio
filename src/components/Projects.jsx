@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-// ── Replace these with your actual projects ──
 const projects = [
   {
     image: "/Screenshot 2026-02-11 121231.png",
@@ -53,7 +52,6 @@ export default function Projects() {
           {projects.map((project) => (
             <Col key={project.title} md={6} lg={4}>
               <div className="project-card">
-                {/* Project preview — replace with a real screenshot using <img> */}
                 <div className="project-img">
                   <img
                     src={project.image}

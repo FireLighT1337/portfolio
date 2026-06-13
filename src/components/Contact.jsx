@@ -9,7 +9,6 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  // This uses Formspree — sign up free at formspree.io and replace the URL
   async function handleSubmit(e) {
     e.preventDefault();
     const res = await fetch("https://formspree.io/f/xykabajy", {
@@ -42,7 +41,7 @@ export default function Contact() {
                   <h3 style={{ fontWeight: 700, marginBottom: "0.5rem" }}>
                     Nachricht gesendet!
                   </h3>
-                  <p style={{ color: "#64748b" }}>
+                  <p style={{ color: "var(--muted)" }}>
                     Danke fürs Kontaktieren, ich melde mich sobald ich kann.
                   </p>
                 </div>
