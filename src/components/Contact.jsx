@@ -81,7 +81,7 @@ export default function Contact() {
 
                   <div className="mb-4">
                     <label htmlFor="message" className="contact-label">
-                      Message
+                      Nachricht
                     </label>
                     <textarea
                       id="message"
