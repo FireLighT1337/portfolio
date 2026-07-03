@@ -7,7 +7,15 @@ const skillGroups = [
   },
   {
     category: "Frameworks & Libraries",
-    skills: ["React", "Bootstrap", "Node.js", "Express", "Axios", "jQuery"],
+    skills: [
+      "React",
+      "Bootstrap",
+      "Node.js",
+      "Express",
+      "Axios",
+      "jQuery",
+      "Jest",
+    ],
   },
   {
     category: "Tools & Platforms",
@@ -38,19 +46,8 @@ export default function Skills() {
         <Row className="g-6">
           {skillGroups.map((group) => (
             <Col key={group.category} sm={6} lg={3}>
-              <p
-                style={{
-                  fontSize: "0.8rem",
-                  fontWeight: 700,
-                  color: "#112e81",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.10em",
-                  marginBottom: "0.75rem",
-                }}
-              >
-                {group.category}
-              </p>
-              <div>
+              <p className="skill-category">{group.category}</p>
+              <div className="skill-pill-container">
                 {group.skills.map((skill) => (
                   <span key={skill} className="skill-pill">
                     <span className="skill-dot" />
