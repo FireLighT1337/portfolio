@@ -9,17 +9,22 @@ const skillGroups = [
     category: "Frameworks & Libraries",
     skills: [
       "React",
+      "Angular",
+      "Vite",
       "Bootstrap",
-      "Node.js",
       "Express",
       "Axios",
+      "Passport",
+      "bcrypt",
       "jQuery",
+      "RxJS",
+      "NgRX",
       "Jest",
     ],
   },
   {
     category: "Tools & Platforms",
-    skills: ["Git", "GitHub", "Azure", "VS Code", "PyCharm", "Docker"],
+    skills: ["Docker", "Azure DevOps", "GitHub", "VS Code", "PyCharm"],
   },
   {
     category: "Databases",
@@ -36,16 +41,16 @@ export default function Skills() {
             <p className="section-label">Womit arbeite ich?</p>
             <h2 className="section-title">Skills & Tech Stack</h2>
             <p className="section-desc">
-              Technologien, die ich im Rahmen meiner Ausbildung in Projekten und
-              Kursen erlernt habe. Allerdings bin ich natürlich immer offen für
-              neue Technologien und lerne gerne dazu.
+              Technologien, die ich im Rahmen meiner Ausbildung und privat in
+              Projekten und Kursen erlernt habe. Allerdings bin ich natürlich
+              immer offen für neue Technologien und lerne gerne dazu.
             </p>
           </Col>
         </Row>
 
-        <Row className="g-6">
+        <Row className="g-4">
           {skillGroups.map((group) => (
-            <Col key={group.category} sm={6} lg={3}>
+            <Col key={group.category} sm={6} lg={3} className="mb-lg-0">
               <p className="skill-category">{group.category}</p>
               <div className="skill-pill-container">
                 {group.skills.map((skill) => (

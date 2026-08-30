@@ -15,7 +15,7 @@ header {
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: "Karla", sans-serif;
   color: var(--dark);
 }
 
@@ -76,6 +76,13 @@ body {
   max-width: 690px;
   margin-top: 1rem;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
 }
 
 .btn-primary-custom {

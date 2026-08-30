@@ -4,14 +4,14 @@ export default function Footer() {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center text-center text-md-start">
           <Col md={6} className="mb-2 mb-md-0">
             <span style={{ color: "#fff", fontWeight: 700 }}>Asad Sardar</span>
             <span style={{ marginLeft: "0.75rem" }}>
               © {new Date().getFullYear()}
             </span>
           </Col>
-          <Col md={6} className="text-md-end">
+          <Col md={6} className="text-center text-md-end">
             <a
               href="https://github.com/FireLighT1337"
               target="_blank"

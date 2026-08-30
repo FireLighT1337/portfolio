@@ -17,9 +17,9 @@ export default function Hero() {
               Webentwicklung, allerdings wurde mir nach dem Web-Dev Modul
               innerhalb meiner Ausbildung sehr schnell klar, dass ich in diesem
               Bereich später einmal arbeiten möchte. <br />
-              Ich werde zum 06.07.2026 meine Ausbildung abschließen und freue
-              mich schon darauf, das Gelernte in einem professionellen Umfeld
-              anwenden zu können.
+              Ich habe am 06.07.2026 meine Ausbildung erfolgreich abgeschlossen
+              und freue mich schon darauf, das Gelernte in einem professionellen
+              Umfeld anwenden zu können.
             </p>
             <div className="d-flex gap-3 flex-wrap mt-4">
               <a href="#projects" className="btn-primary-custom">
