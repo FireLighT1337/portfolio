@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const skillGroups = [
   {
     category: "Languages",
-    skills: ["JavaScript", "TypeScript", "HTML", "CSS", "EJS", "Python", "C#"],
+    skills: ["JavaScript", "TypeScript", "HTML", "CSS", "Python", "C#", "Java"],
   },
   {
     category: "Frameworks & Libraries",
@@ -14,11 +14,15 @@ const skillGroups = [
       "Bootstrap",
       "Express",
       "Axios",
+      "FastAPI",
       "Passport",
       "bcrypt",
       "jQuery",
+      "EJS",
       "RxJS",
       "NgRX",
+      "LangChain",
+      "Pydantic",
       "Jest",
     ],
   },

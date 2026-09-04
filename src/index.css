@@ -219,6 +219,8 @@ body {
     transform 0.2s,
     box-shadow 0.2s;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -239,6 +241,10 @@ body {
 
 .project-body {
   padding: 1.25rem 1.5rem 1.5rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .project-title {
@@ -253,6 +259,7 @@ body {
   color: var(--muted);
   line-height: 1.65;
   margin-bottom: 1rem;
+  flex: 1 1 auto;
 }
 
 .tech-tag {
@@ -264,6 +271,11 @@ body {
   padding: 3px 10px;
   border-radius: 100px;
   margin: 2px;
+}
+
+.tech-tags {
+  min-height: 5.75rem;
+  align-content: flex-start;
 }
 
 .project-links {
@@ -281,6 +293,10 @@ body {
   align-items: center;
   gap: 4px;
   transition: opacity 0.2s;
+}
+
+.project-tags-links {
+  flex-shrink: 0;
 }
 
 .project-link:hover {

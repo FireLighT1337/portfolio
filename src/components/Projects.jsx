@@ -2,32 +2,55 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const projects = [
   {
+    image: "/Screenshot 2026-09-04 114838.png",
+    position: "center",
+    title: "Steam Tracker",
+    description:
+      "Eine Full-Stack Webanwendung, mit der man seine Steam-Bibliothek durchsuchen, Achievements verfolgen und einen persönlichen Backlog verwalten kann. Das Backend kommuniziert mit der Steam-API, Login erfolgt direkt über den eigenen Steam-Account mithilfe von OpenID.",
+    tech: [
+      "Angular",
+      "RxJS",
+      "TypeScript",
+      "Express",
+      "Axios",
+      "Bootstrap",
+      "CSS",
+    ],
+    github: "https://github.com/FireLighT1337/steam-tracker",
+    live: "https://steam-tracker-three.vercel.app/dashboard",
+    reference: "",
+  },
+  {
     image: "/Screenshot 2026-02-11 121231.png",
     position: "center",
-    title: "B.E.R.N.D. Chatbot Frontend",
+    title: "B.E.R.N.D. Chatbot",
     description:
-      "Ein Frontend für einen Chatbot, der mit einem RAG-Backend verbunden ist. Nutzer können Fragen stellen und erhalten Antworten basierend auf den Daten, die das Backend bereitstellt.",
-    tech: ["React", "JavaScript", "CSS", "Azure"],
-    github: "https://github.com/FireLighT1337/abschlussprojekt",
+      "Ursprünglich mein IHK-Abschlussprojekt (Frontend), das Backend habe ich nachträglich selbst entwickelt, da das Original bei Bertrandt verblieben ist. Ein Chatbot, der mit einem FastAPI RAG-Backend verbunden ist. Nutzer können Fragen stellen und erhalten Antworten basierend auf den Daten, die in das Backend hochgeladen wurden.",
+    tech: [
+      "React",
+      "FastAPI",
+      "JavaScript",
+      "Python",
+      "LangChain",
+      "Pydantic",
+      "CSS",
+      "Azure DevOps",
+      "Jest",
+    ],
+    github: "https://github.com/FireLighT1337/fullstack-abschlussprojekt",
+    live: "https://fullstack-abschlussprojekt.vercel.app/",
+    reference: "",
   },
   {
     image: "/Screenshot 2026-02-11 133903.png",
     position: "top",
     title: "RfQ Scanner Frontend",
     description:
-      "Innerhalb eines internen Projektes hatte ich die Aufgabe, ein bestehendes Frontend für mobile Geräte zu optimieren. Allerings kann ich natürlich hier leider nicht viel dazu zeigen.",
-    tech: ["Vite", "TypeScript", "CSS", "Azure"],
+      "Innerhalb eines internen Projektes bei Bertrandt hatte ich die Aufgabe, das bestehende Frontend des RfQ Scanners für mobile Geräte zu optimieren, um eine bessere Bedienbarkeit auf kleineren Bildschirmen zu ermöglichen. Ich verweise hier auf die Firmenseite, da ich keinen Code oder ähnliches zeigen kann, möchte damit aber belegen, dass ich tatsächlich an diesem Projekt mitgewirkt habe.",
+    tech: ["Vite", "TypeScript", "Ant Design", "CSS", "Azure DevOps"],
     github: "",
-  },
-  {
-    image: "/Screenshot 2026-06-13 190103.png",
-    position: "center",
-    title: "TinDog",
-    description:
-      "Eine kleine Witz-Webseite, die ich im Rahmen eines Udemy Kurses erstellt habe. Hierbei ging es hauptsächlich darum, Bootstrap zu vertiefen.",
-    tech: ["HTML", "CSS", "Bootstrap"],
-    github:
-      "https://github.com/FireLighT1337/web-dev-course/tree/main/11.3%20TinDog%20Project",
+    live: "",
+    reference: "https://www.bertrandt.com/bernd",
   },
 ];
 
@@ -42,8 +65,8 @@ export default function Projects() {
             </p>
             <h2 className="section-title">Projekte</h2>
             <p className="section-desc">
-              Eine kleine Auswahl an Projekten innerhalb meiner Ausbildung.{" "}
-              <br />
+              Eine kleine Auswahl an Projekten an denen ich privat oder
+              innerhalb meiner Ausbildung gearbeitet habe. <br />
               Jedes Projekt hat mir etwas Neues beigebracht.
             </p>
           </Col>
@@ -69,23 +92,47 @@ export default function Projects() {
                   <h3 className="project-title">{project.title}</h3>
                   <p className="project-desc">{project.description}</p>
 
-                  <div>
-                    {project.tech.map((t) => (
-                      <span key={t} className="tech-tag">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
+                  <div className="project-tags-links">
+                    <div className="tech-tags">
+                      {project.tech.map((t) => (
+                        <span key={t} className="tech-tag">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
 
-                  <div className="project-links">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="project-link"
-                    >
-                      GitHub
-                    </a>
+                    <div className="project-links">
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="project-link"
+                        >
+                          GitHub
+                        </a>
+                      )}
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="project-link"
+                        >
+                          Live Demo
+                        </a>
+                      )}
+                      {project.reference && (
+                        <a
+                          href={project.reference}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="project-link"
+                        >
+                          Firmenseite
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
