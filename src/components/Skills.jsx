@@ -24,6 +24,8 @@ const skillGroups = [
       "LangChain",
       "Pydantic",
       "Jest",
+      "Vitest",
+      "Playwright",
     ],
   },
   {

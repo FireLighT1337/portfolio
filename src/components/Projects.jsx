@@ -15,6 +15,8 @@ const projects = [
       "Axios",
       "Bootstrap",
       "CSS",
+      "Vitest",
+      "Playwright",
     ],
     github: "https://github.com/FireLighT1337/steam-tracker",
     live: "https://steam-tracker-three.vercel.app/dashboard",
