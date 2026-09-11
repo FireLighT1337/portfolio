@@ -183,7 +183,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #324675;
+  background: var(--dark);
   border: 1px solid #566d99;
   border-radius: 8px;
   padding: 8px 16px;
@@ -264,7 +264,7 @@ body {
 
 .tech-tag {
   display: inline-block;
-  background: var(--muted);
+  background: var(--dark);
   color: var(--accent-light);
   font-size: 0.85rem;
   font-weight: 600;
