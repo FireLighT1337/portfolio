@@ -49,7 +49,7 @@ const projects = [
     title: "RfQ Scanner Frontend",
     description:
       "Innerhalb eines internen Projektes bei Bertrandt hatte ich die Aufgabe, das bestehende Frontend des RfQ Scanners für mobile Geräte zu optimieren, um eine bessere Bedienbarkeit auf kleineren Bildschirmen zu ermöglichen. Ich verweise hier auf die Firmenseite, da ich keinen Code oder ähnliches zeigen kann, möchte damit aber belegen, dass ich tatsächlich an diesem Projekt mitgewirkt habe.",
-    tech: ["Vite", "TypeScript", "Ant Design", "CSS", "Azure DevOps"],
+    tech: ["React", "Vite", "TypeScript", "Ant Design", "CSS", "Azure DevOps"],
     github: "",
     live: "",
     reference: "https://www.bertrandt.com/bernd",

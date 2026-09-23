@@ -278,6 +278,11 @@ body {
   align-content: flex-start;
 }
 
+.tech-tag:hover {
+  background: #3b5286;
+  border-color: #d6e2f5;
+}
+
 .project-links {
   display: flex;
   gap: 10px;
